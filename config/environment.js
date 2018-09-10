@@ -20,7 +20,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    TOKEN_ENDPOINT: process.env.TOKEN_ENDPOINT,
+    TRANSLATION_ENDPOINT: process.env.TRANSLATION_ENDPOINT
   };
 
   if (environment === 'development') {
