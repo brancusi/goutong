@@ -1,0 +1,17 @@
+<div>
+  <!-- {{audio-recorder
+      processAudio=processAudio}} -->
+
+  <div class="flex flex-wrap">
+    {{user-box track=me}}
+
+    {{#each tracks as |track|}}
+      {{user-box track=track}}
+    {{/each}}
+  </div>
+
+</div>
+
+<!-- {{#if lessonStash.hasActiveCard}}
+  {{flash-card model=lessonStash.currentCard}}
+{{/if}} -->
